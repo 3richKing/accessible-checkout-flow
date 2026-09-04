@@ -56,11 +56,46 @@ Accessibility is the point of this project, not an afterthought. What was done:
 
 ## Getting started
 
-Requires Node 20 or newer.
+### 1. Prerequisites
+
+Node 18 or newer and npm. Check your version with `node --version`.
+
+### 2. Clone the repository
+
+```bash
+git clone https://github.com/3richKing/accessible-checkout-flow.git
+cd accessible-checkout-flow
+```
+
+### 3. Install dependencies
 
 ```bash
 npm install
-npm run dev        # start the local dev server
+```
+
+### 4. Start the dev server
+
+```bash
+npm run dev
+```
+
+Vite prints a local URL, by default `http://localhost:5173`. Open it in your browser to load the app.
+
+### 5. Walk through the checkout
+
+This is a front end mock. Nothing is sent to a server and no payment is processed, so you can use placeholder details.
+
+1. Cart: adjust item quantities with the steppers, or remove a line. The subtotal, tax, and total update as you go. Select **Continue to shipping**.
+2. Shipping: fill in the shipping address fields, then select **Continue to payment**. Submitting with missing or invalid fields shows accessible inline errors and keeps you on the step.
+3. Payment: enter placeholder card details, then select **Review order**.
+4. Review: check the read only summary of the whole order, then select **Place order**. Use **Back** to return to an earlier step if you need to change something.
+5. Confirmation: the app shows a generated order reference and moves focus to the confirmation heading.
+
+### 6. Run the tests and a production build
+
+```bash
+npm test       # run the test suite once with Vitest
+npm run build  # type check and build for production
 ```
 
 ## Scripts
