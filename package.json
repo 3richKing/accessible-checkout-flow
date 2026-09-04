@@ -1,0 +1,48 @@
+{
+  "name": "accessible-checkout-flow",
+  "version": "0.1.0",
+  "description": "An accessible, responsive multi-step checkout demo built with React, TypeScript, and styled-components.",
+  "license": "MIT",
+  "author": "Erich King",
+  "type": "module",
+  "homepage": "https://github.com/3richKing/accessible-checkout-flow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3richKing/accessible-checkout-flow.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.2",
+    "styled-components": "^6.1.13",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "jsdom": "^25.0.1",
+    "prettier": "^3.4.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.6"
+  }
+}
